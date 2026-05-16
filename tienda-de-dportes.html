@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexo</title>
+  <link rel="stylesheet" href="/css/Tienda-de-deportes.css">
+</head>
+<body>
+
+
+  <nav>
+    <div class="logo">
+      <img src="img/nexo-horizontal.png" alt="Nexo">
+    </div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="btn-carrito" onclick="abrirCarrito()">
+      🛒 <span id="carritoCount">0</span>
+    </button>
+  </nav>
+
+  <div class="cajaprincipal">
+
+
+    <div class="cajahija1" id="inicio">
+      <h1>Equípate para <span class="neon">ganar</span></h1>
+      <p>Cada prenda, cada producto, hecho para rendir al máximo.</p>
+      <a href="#productos"><button>Ver productos</button></a>
+    </div>
+
+
+    <div class="cajahija2" id="productos">
+
+      <div class="cajanieta1">
+        <img src="/imajes_de_la_tienda_de_deportes/camisa 1.png" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$80.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 80000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="cajanieta2">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$65.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 65000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="cajanieta3">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$95.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 95000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="cajanieta4">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$45.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 45000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+    </div>
+
+
+    <div class="cajahija3">
+
+      <div class="cajanieta5">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$55.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 55000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="cajanieta6">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$70.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 70000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="cajanieta7">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$35.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 35000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="cajanieta8">
+        <img src="foto.jpg" alt="producto">
+        <h3>Nombre producto</h3>
+        <p>Descripción breve.</p>
+        <span>$90.000</span>
+        <button class="btn-comprar" onclick="agregarCarrito('Nombre producto', 90000, 'foto.jpg')">Agregar al carrito</button>
+      </div>
+
+    </div>
+
+
+    <div class="cajahija1" id="nosotros">
+      <div class="nosotros-texto">
+        <h2>Nuestra Historia</h2>
+        <p>Nexo nació en Mosquera, Cundinamarca, cuando un grupo de jóvenes apasionados por el deporte no encontraba implementos de calidad cerca de casa. Cansados de buscar lejos y pagar caro, decidieron crear su propia solución.</p>
+        <p>Lo que empezó como una idea entre amigos hoy equipa a cientos de deportistas en la región. Creemos que el rendimiento empieza con el equipo correcto, y ese equipo tiene que estar al alcance de todos.</p>
+        <ul class="nosotros-datos">
+          <li><span class="dato-numero">6+</span> años de experiencia</li>
+          <li><span class="dato-numero">7+</span> variedades de productos</li>
+          <li><span class="dato-numero">100.000+</span> clientes felices</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="cajahija1" id="contacto">
+      <h2>Contacto</h2>
+      <input type="text"  placeholder="Tu nombre" />
+      <input type="email" placeholder="Tu correo" />
+      <textarea rows="4"  placeholder="Tu mensaje..."></textarea>
+      <button>Enviar</button>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Nexo</h3>
+        <p>Implementos deportivos con alma colombiana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <p>📍 Mosquera, Cundinamarca</p>
+        <p>✉️ tumbapuertas098@gmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <a href="#">📸 Instagram</a>
+        <a href="#">👤 Facebook</a>
+        <a href="#">💬 WhatsApp</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Nexo — Todos los derechos reservados</p>
+  </footer>
+
+
+</body>
+</html>
