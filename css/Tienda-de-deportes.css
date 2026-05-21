@@ -1,15 +1,13 @@
 :root {
-    /* Colores */
-    --color-fondo:    #050d1a;   /* Fondo principal oscuro */
-    --color-tarjeta:  #0d1e35;   /* Fondo de tarjetas */
-    --color-medio:    #0a1628;   /* Fondo intermedio */
-    --color-borde:    #1a3355;   /* Bordes */
-    --color-neon:     #00c6ff;   /* Azul neon principal */
-    --color-neon2:    #0072ff;   /* Azul neon secundario */
-    --color-gris:     #8ba7c4;   /* Texto secundario */
-    --color-blanco:   #e8f4ff;   /* Texto principal */
+    --color-fondo:    #050d1a;
+    --color-tarjeta:  #0d1e35;
+    --color-medio:    #0a1628;
+    --color-borde:    #1a3355;
+    --color-neon:     #00c6ff;
+    --color-neon2:    #0072ff;
+    --color-gris:     #8ba7c4;
+    --color-blanco:   #e8f4ff;
 
-    
     --fuente-principal: 'Segoe UI', Arial, sans-serif;
     --sombra: 0 4px 12px rgba(0, 0, 0, 0.4);
     --gradiente-neon: linear-gradient(90deg, var(--color-neon2), var(--color-neon));
@@ -91,20 +89,37 @@ a {
     gap: 0.8rem;
 }
 
-
+/* ===== HERO CON IMAGEN DE FONDO ===== */
 .hero {
-    background-color: var(--color-fondo);
-    min-height: 90vh;
+    background-image: url('/imajes_de_la_tienda_de_deportes/Gemini_Generated_Image_j14fo2j14fo2j14f.png');
+    background-size: cover;
+    background-position: center top; 
+    background-repeat: no-repeat;
+    min-height: 100vh;  
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
+    position: relative;
+}
+
+/* Capa oscura para que el texto se lea bien */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 13, 26, 0.65);
 }
 
 .hero-contenido {
     text-align: center;
     max-width: 700px;
     padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-titulo {
@@ -128,7 +143,6 @@ a {
     color: transparent;
 }
 
-
 .btn-cta {
     display: inline-block;
     padding: 0.8rem 2.5rem;
@@ -146,7 +160,6 @@ a {
     opacity: 0.85;
     transform: scale(1.03);
 }
-
 
 .seccion {
     padding: 5rem 2rem;
@@ -179,7 +192,6 @@ a {
     margin-bottom: 3rem;
     font-size: 0.95rem;
 }
-
 
 .tarjetas-grid {
     display: flex;
@@ -253,7 +265,6 @@ a {
 .btn-comprar:hover {
     opacity: 0.85;
 }
-
 
 .nosotros-grid {
     display: flex;
@@ -344,7 +355,6 @@ a {
     border-color: var(--color-neon);
     box-shadow: 0 0 0 3px rgba(0, 198, 255, 0.15);
 }
-
 
 .overlay {
     display: none;
@@ -497,7 +507,6 @@ a {
 .btn-pagar:hover {
     opacity: 0.85;
 }
-
 
 .footer {
     background-color: var(--color-medio);
