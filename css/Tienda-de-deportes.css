@@ -89,7 +89,7 @@ a {
     gap: 0.8rem;
 }
 
-/* ===== HERO CON IMAGEN DE FONDO ===== */
+
 .hero {
     background-image: url('/imajes_de_la_tienda_de_deportes/Gemini_Generated_Image_j14fo2j14fo2j14f.png');
     background-size: cover;
@@ -103,7 +103,7 @@ a {
     position: relative;
 }
 
-/* Capa oscura para que el texto se lea bien */
+
 .hero::before {
     content: '';
     position: absolute;
